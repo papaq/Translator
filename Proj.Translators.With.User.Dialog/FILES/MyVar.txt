@@ -1,0 +1,22 @@
+Bapiant 20
+1.	<signal-program> --> <program>
+2.	<program> --> PROGRAM <procedure-identifier> ; <block>.
+3.	<block> --> <variable-declarations> BEGIN <statements-list> END
+4.	<variable-declarations> --> VAR <declarations-list> | <empty>
+5.	<declarations-list> --> <declaration> <declarations-list> | <empty>
+6.	<declaration> --><variable-identifier>:<attribute> ;
+7.	<attribute> --> INTEGER | FLOAT
+8.	<statements-list> --> <statement> <statements-list> |<empty>
+9.	<statement> --> WHILE <conditional-expression>DO <statements-list> ENDWHILE ;
+10.	<conditional-expression> --> <expression><comparison-operator><expression>
+11.	<comparison-operator> -->  < | <= | = | <> | >= | >
+12.	<expression> --> <variable-identifier> |<unsigned-integer>
+13.	<variable-identifier> --> <identifier>
+14.	<procedure-identifier> --> <identifier>
+15.	<identifier> --> <letter><string>
+16.	<string> --> <letter><string> |<digit><string> |<empty>
+17.	<unsigned-integer> --> <digit><digits-string>
+18.	<digits-string> --> <digit><digits-string> |<empty>
+19.	<digit> --> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+20.	<letter> --> A | B | C | D | ... | Z
+
